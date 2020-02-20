@@ -1,0 +1,20 @@
+
+/*
+    I am the quiet storm, ping me tinka.edgar@gmail.com if you like my code
+*/
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 100%;
+}
+
+.post{
+    width: 23%;
+    text-align: left;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
