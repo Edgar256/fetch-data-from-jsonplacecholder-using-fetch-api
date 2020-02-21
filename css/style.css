@@ -21,3 +21,24 @@
 .image{
     width: 100%;
 }
+.btn-success, .btn-success :hover{
+    background-color: #3367d6;
+    border: 1px solid #3367d6;
+    margin: 5px;
+}
+.center-text{
+    text-align: center;
+}
+
+/* start media queries */
+
+@media screen and (max-width: 768px) and (min-width: 570px) {
+    .post{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 569px){
+    .post{
+        width: 98%;
+    }
+}
