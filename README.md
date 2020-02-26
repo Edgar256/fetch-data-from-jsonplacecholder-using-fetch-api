@@ -17,7 +17,7 @@ Skills of displayed in this project
 
 
 This project is hosted on Heroku, please check it out here
-[HERE](https://displaying-posts.herokuapp.com/)
+[https://displaying-posts.herokuapp.com](https://displaying-posts.herokuapp.com/)
 
 # SCREEN-SHOT
 
