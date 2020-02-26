@@ -21,4 +21,12 @@ This project is hosted on Heroku, please check it out here
 
 # SCREEN-SHOT
 
-<img src='' alt='image' />
+<img src='./images/snapshot001.PNG' />
+
+<img src='./images/snapshot002.PNG' />
+
+<img src='./images/snapshot003.PNG' />
+
+<img src='./images/snapshot004.PNG' />
+
+<img src='./images/snapshot005.PNG' />
