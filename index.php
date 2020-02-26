@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="center-text">Getting data using the Fetch API from JSON Placeholder</h2>
+        <h2>Getting data using the Fetch API from JSON Placeholder</h2>
         <div class="row">
             <span><button class="btn btn-success" id="getPosts">GET POSTS</button> </span>
             <span><button class="btn btn-success" id="getComments">GET COMMENTS</button> </span>
@@ -52,6 +52,27 @@
         .catch((err) => console.log(err))
     }
 
+    function getComments(){
+        fetch('https://jsonplaceholder.typicode.com/comments')
+            .then((res) => res.json())
+            .then((data) => {
+                let output = `<h2>Comments</h2><div class="posts"> `;
+                data.forEach(comment => {
+                    output += `
+                            <div class="post">
+                                <h5>ID : ${comment.name} </h5>
+                                <p>Name : ${comment.email} </p>
+                                <p>Email : ${comment.body} </p>
+                            </div>
+                        
+                    `
+                });
+
+                document.getElementById('posts').innerHTML = output;
+        })
+        .catch((err) => console.log(err))
+    }
+
     function getPhotos(){
         fetch('https://jsonplaceholder.typicode.com/photos')
             .then((res) => res.json())
@@ -78,7 +99,7 @@
             .then((res) => res.json())
             .then((data) => {
                 console.log(res)
-                let output = `<h2>Todos</h2><div class="posts"> `;
+                let output = `<h2>Comments</h2><div class="posts"> `;
                 data.forEach(todo => {
                     output += `
                             <div class="post">
@@ -124,11 +145,11 @@
         .catch((err) => console.log(err))
     }
 
-    document.getElementById('getPosts').addEventListener('click', getPosts)
+    document.getElementById('getPosts').addEventListener('click', getPosts())
     document.getElementById('getComments').addEventListener('click', getComments)
     document.getElementById('getPhotos').addEventListener('click', getPhotos)
     document.getElementById('getTodos').addEventListener('click', getTodos)
-    document.getElementById('getUsers').addEventListener('click', getUsers())
+    document.getElementById('getUsers').addEventListener('click', getUsers)
 
     
 </script>
